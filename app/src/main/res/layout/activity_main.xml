@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_color">
+    <!--android.support.v4.widget.DrawerLayout-->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/first_intro_page_m"
+        android:headerDividersEnabled="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="@color/transparent_color">
+
+        <ListView
+            android:id="@+id/left_drawer_list"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:layout_gravity="start"
+            android:background="@color/transparent_color"
+            android:headerDividersEnabled="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:cacheColorHint="@color/transparent_color"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/rut_map_city_guide"
+            android:id="@+id/imgRutMapS"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="47dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/firstpage_category_m"
+            android:id="@+id/imgCTGB"
+            android:layout_centerVertical="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imgRutMapS"
+            android:layout_marginTop="10dp"
+            android:layout_height="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/str_sarajevo"
+            android:id="@+id/imgSarajevo"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:text="Molimo vas da odaberite jezik za nastavak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLNG2"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tvLNG"
+            android:textColor="@android:color/background_light"
+            android:layout_marginBottom="5dp"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLNG"
+            android:layout_centerVertical="false"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/imgSarajevo"
+            android:layout_marginBottom="15dp"
+            android:text="Please chose language to continue"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCTGB"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="false">
+
+            <RelativeLayout
+                android:id="@+id/relLayoutMenuHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:text="POVRATAK NA POČETAK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHoms"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_x"
+                    android:id="@+id/imgFoms"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayoutMenuInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:text="SARAJEVO - INFO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvInfo"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info_x"
+                    android:id="@+id/imgInfo"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayoutMenuPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:text="+387 33 640 300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCall"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_x"
+                    android:id="@+id/imgCall"
+                    android:layout_centerVertical="true"
+                    android:elevation="1dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayoutMenuEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:text="info@rutmap.ba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMail"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mail_x"
+                    android:id="@+id/imgMail"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayoutMenuSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Verzija 2.0.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvWorkTool"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_worktools"
+                    android:id="@+id/imgWorkTool"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvLNG2"
+            android:layout_centerVertical="true">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/cell_langu_bosni" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/cell_langu_english" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

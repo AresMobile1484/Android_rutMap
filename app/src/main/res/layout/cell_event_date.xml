@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@color/colorBlue1">
+
+    <RelativeLayout
+        android:layout_width="52dp"
+        android:layout_height="96dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/btn_set"
+            android:id="@+id/imgvSetBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp" />
+
+        <TextView
+            android:text="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorEventBack"
+            android:textSize="14sp"
+            android:id="@+id/txtvWeek"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="TR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvDate"
+            android:textColorLink="@color/colorBlue1"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/txtvMonth" />
+
+        <TextView
+            android:text="AUG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvMonth"
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            android:gravity="bottom|center_horizontal"
+            android:minHeight="0dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

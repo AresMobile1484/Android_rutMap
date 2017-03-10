@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RutMap</string>
+
+    <string name="access_token" translatable="false">pk.eyJ1IjoieXVyaWhvbmciLCJhIjoiY2l6N3BnNzZ0MDA5NjJxbXA1ZWw5N3NqdCJ9.zPSYY46gmRQVkFZKqG7AAQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

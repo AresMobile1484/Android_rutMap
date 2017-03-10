@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@color/transparent_color"
+    android:layout_centerVertical="false"
+    android:layout_centerHorizontal="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_language"
+            android:id="@+id/img_Bosni_btn"
+            android:layout_weight="1"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bosnia_f"
+            android:id="@+id/img_bosni"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="false"
+            android:layout_alignLeft="@+id/img_Bosni_btn" />
+
+        <TextView
+            android:text="BOSNIAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_bosnian"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/img_Bosni_btn"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

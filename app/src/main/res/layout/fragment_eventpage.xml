@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEventBack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lyNav"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorBackground1"
+        android:layout_alignParentStart="true"
+        android:layout_height="52dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_calender"
+                android:id="@+id/imageView3"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:text="DEŠAVANJA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"
+                android:layout_gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_search"
+            android:id="@+id/img_Search"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/img_right_top"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_settings_right_top"
+            android:id="@+id/img_right_top"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12.23dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_menu_m"
+            android:id="@+id/imgSideMenu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="13dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hScrollViewCalender"
+        android:layout_above="@+id/hScrollViewCategory"
+        android:id="@+id/lyEvent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lnEvent"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyEvnF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/lnEvnFilm"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        layout="@layout/cell_event_top" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyEvent1">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lyEvent2"
+                android:gravity="bottom">
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hScrollViewCalender"
+        android:layout_above="@+id/lyCategoryEvents1">
+
+        <LinearLayout
+            android:id="@+id/linLayoutScrollView"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:src="@drawable/bookmarks"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="60dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue1"
+        android:id="@+id/hScrollViewCalender"
+        android:layout_below="@+id/lyNav"
+        android:layout_toRightOf="@+id/lyEvent"
+        android:layout_toEndOf="@+id/lyEvent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="96dp"
+            android:id="@+id/lyContainerSetDate"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/lyCategoryEvents1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/cell_ctgr_film_c"
+            android:layout_weight="1" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/cell_ctgr_music_c"
+            android:layout_weight="1" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/cell_ctgr_theatre_c"
+            android:layout_weight="1" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/cell_ctgr_sport_c"
+            android:layout_weight="1" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/cell_ctgr_other_c"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="187dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/event_img2"
+        android:id="@+id/imgvProduct"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/gradient2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Dešavanja"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/tvTitle" />
+
+                <TextView
+                    android:text="POGLEDAJE LIST"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btn_bg"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="1dp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Spisak dešavanja po datumu i kategoriji (Film, Koncert, ...)"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

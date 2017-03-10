@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rutmap.FirstActivity"
+    android:background="@drawable/first_intro_page_m">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:id="@+id/lyfir_Ctg"
+        android:layout_centerVertical="false"
+        android:layout_below="@+id/lyfirst_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/firstpage_category_m"
+            android:id="@+id/imageView2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_marginTop="47dp"
+        android:id="@+id/lyfirst_title"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rut_map_city_guide"
+            android:id="@+id/img_first_page_title"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lyCtg_trs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="44dp"
+            android:id="@+id/ly_sego_1">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:src="@drawable/str_sarajevo"
+            android:id="@+id/imageView4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="44dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Molimo vas da odaberite jezik za nastavak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_centerVertical="false"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/imageView4"
+            android:layout_marginBottom="18dp"
+            android:text="Please chose language to continue"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/textView2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_set_english"
+                android:id="@+id/imageView6"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_set_bosanski"
+                android:id="@+id/imageView5"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
